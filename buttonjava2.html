@@ -1,0 +1,26 @@
+<!doctype html>
+<html>
+<head>
+<title>Compteur de Click</title>
+<script type="text/javascript">
+var clic = 0
+function recracheur()
+{
+  clic ++
+  document.lolilol.case.value = clic;
+};
+function annulation()
+{
+  clic = 0
+  document.lolilol.case.value = clic;
+}
+</script>
+</head>
+<body>
+  <button onclick="recracheur()">Push</button>
+  <button onclick="annulation()">Init</button>
+  <form name="lolilol">
+  <input name="case" value="" readonly="" style="height:20px; width:20px; background-color:black; color:white;"></input>
+  </form>
+</body>
+</html>
